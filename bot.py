@@ -48,8 +48,8 @@ load_dotenv()
 # Bot configuration
 TOKEN = os.getenv('DISCORD_TOKEN')
 HOST_IP = os.getenv('HOST_IP')  # Optional, will fetch dynamically if not set
-ADMIN_IDS = {int(id_) for id_ in os.getenv('ADMIN_IDS', '1210291131301101618').split(',') if id_.strip()}
-ADMIN_ROLE_ID = int(os.getenv('ADMIN_ROLE_ID', '1376177459870961694'))
+ADMIN_IDS = {int(id_) for id_ in os.getenv('ADMIN_IDS', '1171539843264823418').split(',') if id_.strip()}
+ADMIN_ROLE_ID = int(os.getenv('ADMIN_ROLE_ID', '1171539843264823418'))
 WATERMARK = "BLOOD NODES VPS MANAGEMENT 5 VPS Service"
 WELCOME_MESSAGE = "Welcome To BLOOD NODES VPS MANAGEMENT 5! Get Started With Us!"
 MAX_VPS_PER_USER = int(os.getenv('MAX_VPS_PER_USER', '3'))
@@ -2708,3 +2708,4 @@ if __name__ == "__main__":
         logger.error(f"Bot crashed: {e}")
 
         traceback.print_exc()
+
